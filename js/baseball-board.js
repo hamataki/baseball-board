@@ -6,13 +6,13 @@ let blink
 
 // 左上
 $("#gu_t").on("click", function () {
-    let num = Math.ceil(Math.random() * 9);
+    let num = Math.ceil(Math.random() * 1);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
 
     if (num == 1) {
         $("#pc_hands").html("命中！");
-        let hit = Math.ceil(Math.random() * 4);
+        let hit = Math.ceil(Math.random() * 1);
 
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
