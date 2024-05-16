@@ -2,8 +2,12 @@
 // 2.クリックする
 // 3.コンピュータが選ぶ
 // 4.結果を表示
+alert("ゲームスタート")
 
-$("#bgm").get(0).play();
+    $(document).on("click", function () {
+    $("#bgm").get(0).play();
+});
+
 
 let blink
 
