@@ -10,7 +10,7 @@ baseballboard
 ## ③DEMO
 
 デプロイしている場合はURLを記入（任意）
-https://hamataki.github.io/baseballboard/
+https://hamataki.github.io/baseball-board/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
