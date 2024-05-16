@@ -7,6 +7,8 @@ body {
 /* 画像のパスを指定 */
 #batterbox {
     cursor: url(../img/ball.jpg),auto;
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -25,10 +27,10 @@ header {
   } 
 .ban {
     display: flex;
+    flex-wrap:wrap;
     margin: 0 auto;
     justify-content: center;
 }
-
 .radius {
     position: relative;
     width: 0;
@@ -82,9 +84,6 @@ header {
     background-color: rgb(250, 144, 144);
     top: -77px;
     left: -35px;
-}
-main {
-    border-bottom: 1px solid #ccc;
 }
 .batter{
     width: 120px;
