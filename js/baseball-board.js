@@ -4,7 +4,9 @@
 // 4.結果を表示
 if($("#start").on("click", function () {
 $("#bgm").get(0).play();
-$('#start').hide();
+$("#start").hide();
+$("#cloud").hide();
+$("#mcloud").hide();
 })
 );
 let blink
