@@ -2,23 +2,26 @@
 // 2.クリックする
 // 3.コンピュータが選ぶ
 // 4.結果を表示
-if($("#start").on("click", function () {
-$("#bgm").get(0).play();
-$("#start").hide();
-$("#cloud").hide();
-$("#mcloud").hide();
+
+if ($("#start").on("click", function () {
+    $("#bgm").get(0).play();
+    $("#start").hide();
+    $("#cloud").animate({ opacity: 0 }, { duration: 1000, easing: 'linear' });
+    $("#mcloud").animate({ opacity: 0 }, { duration: 1000, easing: 'linear' });
 })
 );
+
 let blink
 
 // 左上
 $("#gu_t").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
 
     if (num == 1) {
-        $("#pc_hands").html("命中！");
+
         let hit = Math.ceil(Math.random() * 4);
 
         if (hit == 1) {
@@ -55,7 +58,7 @@ $("#gu_t").on("click", function () {
         }
     }
     else if (num == 2 || num == 4) {
-        $("#pc_hands").html("命中！");
+
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -97,6 +100,7 @@ $("#gu_t").on("click", function () {
 
 // 中央上
 $("#cho_t").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -108,7 +112,7 @@ $("#cho_t").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 2) {
-        $("#pc_hands").html("命中！")
+
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -144,7 +148,7 @@ $("#cho_t").on("click", function () {
         }
     }
     else if (num == 3 || num == 5) {
-        $("#pc_hands").html("命中！")
+
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -176,11 +180,11 @@ $("#cho_t").on("click", function () {
             }, 1000);
         }
     }
-
 });
 
 // 右上
 $("#par_t").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -192,7 +196,7 @@ $("#par_t").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 2 || num == 6) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -225,7 +229,7 @@ $("#par_t").on("click", function () {
         }
     }
     else if (num == 3) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1){
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -264,12 +268,13 @@ $("#par_t").on("click", function () {
 
 // 左中央
 $("#gu_c").on("click", function () {
+    
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
 
     if (num == 1 || num == 5 || num == 7) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -308,7 +313,7 @@ $("#gu_c").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 4) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -347,6 +352,7 @@ $("#gu_c").on("click", function () {
 
 // 中央
 $("#cho_c").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -358,7 +364,7 @@ $("#cho_c").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 5) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -394,7 +400,7 @@ $("#cho_c").on("click", function () {
         }
     }
     else if (num == 6) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -430,6 +436,7 @@ $("#cho_c").on("click", function () {
 
 // 中央右
 $("#par_c").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -441,7 +448,7 @@ $("#par_c").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 3 || num == 5 || num == 9) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -474,7 +481,7 @@ $("#par_c").on("click", function () {
         }
     }
     else if (num == 6) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -513,6 +520,7 @@ $("#par_c").on("click", function () {
 
 // 左下
 $("#gu_u").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -524,7 +532,7 @@ $("#gu_u").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 7) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1){
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -560,7 +568,7 @@ $("#gu_u").on("click", function () {
         }
     }
     else if (num == 4 || num == 8) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -596,6 +604,7 @@ $("#gu_u").on("click", function () {
 
 // 中央下
 $("#cho_u").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -607,7 +616,7 @@ $("#cho_u").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 8) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -643,7 +652,7 @@ $("#cho_u").on("click", function () {
         }
     }
     else if (num == 5 || num == 7 || num == 9) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
@@ -679,6 +688,7 @@ $("#cho_u").on("click", function () {
 
 // 右下
 $("#par_u").on("click", function () {
+
     let num = Math.ceil(Math.random() * 9);
     $('#particles-js').hide();
     //紙吹雪を非表示にする
@@ -690,7 +700,7 @@ $("#par_u").on("click", function () {
         console.log("ストライク");
     }
     else if (num == 9) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $('#particles-js').css('display', 'block').css('opacity', 1);
@@ -726,7 +736,7 @@ $("#par_u").on("click", function () {
         }
     }
     else if (num == 6 || num == 8) {
-        $("#pc_hands").html("命中！")
+        
         let hit = Math.ceil(Math.random() * 4);
         if (hit == 1) {
             $("#result").html("ファール");
