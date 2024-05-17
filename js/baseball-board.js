@@ -2,13 +2,11 @@
 // 2.クリックする
 // 3.コンピュータが選ぶ
 // 4.結果を表示
-alert("ゲームスタート")
-
-    $(document).on("click", function () {
-    $("#bgm").get(0).play();
-});
-
-
+if($("#start").on("click", function () {
+$("#bgm").get(0).play();
+$('#start').hide();
+})
+);
 let blink
 
 // 左上
