@@ -114,14 +114,14 @@ header {
     width: 120px;
     height: 240px;
 }
-/* .gage {
+.gage {
     width: 200px;
   }
 .gage-item {
     width: 0;
     height: 24px;
     background-color: #f9ff57;
-  } */
+  }
 footer {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
